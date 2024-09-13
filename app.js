@@ -26,5 +26,9 @@ function fromYenToPound (yen) {
     return yenToEuro * oneEuroIs.GBP;
 }
 
+console.log(fromDollarToYen(10))
+console.log(fromEuroToDollar(10))
+console.log(fromYenToPound(10))
+
 // We include fromEuroToDollar here as well because it needs to be exported
-module.exports = { fromEuroToDollar }
+module.exports = { fromEuroToDollar, fromDollarToYen, fromYenToPound }
